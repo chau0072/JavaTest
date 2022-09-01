@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="BrowserName" value=""/>
+  <parameter name="Url" value="http://cc-admin.mitel.io"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.test.LoginPageTest">
+        <parameter name="password" value="Micc@123"/>
+        <parameter name="username" value="miccautomationpubliccl@gmail.com"/>
+        <methods>
+          <include name="ValidatePageheader"/>
+          <include name="LoginTest" invocation-numbers="0"/>
+          <include name="quitBrowser"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- com.test.LoginPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
